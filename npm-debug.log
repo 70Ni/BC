@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'view',
+1 verbose cli   '--json',
+1 verbose cli   '@testing-library/jest-dom',
+1 verbose cli   'description',
+1 verbose cli   'dist-tags.latest',
+1 verbose cli   'homepage',
+1 verbose cli   'version' ]
+2 info using npm@1.2.11
+3 info using node@v0.8.20
+4 verbose url raw
+5 verbose url resolving [ 'https://registry.npmjs.org/', './' ]
+6 verbose url resolved https://registry.npmjs.org/
+7 info trying registry request attempt 1 at 07:37:55
+8 http GET https://registry.npmjs.org/
+9 error Error: SSL Error: CERT_UNTRUSTED
+9 error     at ClientRequest.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:525:26)
+9 error     at ClientRequest.g (events.js:192:14)
+9 error     at ClientRequest.EventEmitter.emit (events.js:96:17)
+9 error     at HTTPParser.parserOnIncomingClient [as onIncoming] (http.js:1569:7)
+9 error     at HTTPParser.parserOnHeadersComplete [as onHeadersComplete] (http.js:111:23)
+9 error     at CleartextStream.socketOnData [as ondata] (http.js:1472:20)
+9 error     at CleartextStream.CryptoStream._push (tls.js:544:27)
+9 error     at SecurePair.cycle (tls.js:898:20)
+9 error     at EncryptedStream.CryptoStream.write (tls.js:285:13)
+9 error     at Socket.ondata (stream.js:38:26)
+10 error If you need help, you may report this log at:
+10 error     <http://github.com/isaacs/npm/issues>
+10 error or email it to:
+10 error     <npm-@googlegroups.com>
+11 error System Linux 5.11.0-27-generic
+12 error command "/usr/local/bin/node" "/usr/local/bin/npm" "view" "--json" "@testing-library/jest-dom" "description" "dist-tags.latest" "homepage" "version"
+13 error cwd /home/tony/Desktop/bc
+14 error node -v v0.8.20
+15 error npm -v 1.2.11
+16 error code ESSL
+17 verbose exit [ 1, true ]
